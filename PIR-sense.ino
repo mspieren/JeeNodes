@@ -15,7 +15,7 @@
 
 /////////////////////////////
 //VARS
-int calibrationTime = 20;        //the time we give the sensor to calibrate (10-60 secs according to the datasheet)
+int calibrationTime = 30;        //the time we give the sensor to calibrate (10-60 secs according to the datasheet)
 
 long unsigned int lowIn;   		 //the time when the sensor outputs a low impulse
      
@@ -24,8 +24,8 @@ long unsigned int pause = 20000;  //the amount of milliseconds the sensor has to
 boolean lockLow = true;
 boolean takeLowTime;  
 
-int pirPin = 4;    //the digital pin connected to the PIR sensor's output
-int ledPin = 6;
+int pirPin = 4;     //the digital pin connected to the PIR sensor's output, Jeenode port 1
+int ledPin = 6;     // Led op Jeenode port 3
 int relayPin = 5;   // digital pin waar relais is connected, Jeenode Port 2
 
 
