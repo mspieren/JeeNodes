@@ -11,7 +11,7 @@
  */
 
 //Defines..... msp, 07012016
-#define DEBUG 0  // If you want to debug set to 1 to do the Serial prints
+#define DEBUG 1  // If you want to debug set to 1 to do the Serial prints
 
 /////////////////////////////
 //VARS
@@ -19,7 +19,7 @@ int calibrationTime = 20;        //the time we give the sensor to calibrate (10-
 
 long unsigned int lowIn;   		 //the time when the sensor outputs a low impulse
      
-long unsigned int pause = 30000;  //the amount of milliseconds the sensor has to be low before we assume all motion has stopped
+long unsigned int pause = 20000;  //the amount of milliseconds the sensor has to be low before we assume all motion has stopped
 
 boolean lockLow = true;
 boolean takeLowTime;  
